@@ -1,0 +1,112 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminar Schedule Table</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f0f2f5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+table {
+border-collapse: collapse;
+background-color: #ffffff;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+text-align: center;
+border: 3px double #555;
+}
+
+th, td {
+border: 1px solid #555;
+padding: 12px 20px;
+font-size: 15px;
+color: #333;
+}
+
+/* Header Styling */
+th {
+background-color: #e2e8f0;
+font-weight: bold;
+}
+
+/* Colors mimicking the image blocks */
+.time-begin {
+background-color: #d1fae5; /* Light green */
+}
+
+.time-end {
+background-color: #e0e7ff; /* Light blue/purple */
+}
+
+.day-cell {
+background-color: #f8fafc;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<table>
+<!-- Row 1: Main Title -->
+<tr>
+<th colspan="4" style="font-size: 18px; background-color: #cbd5e1;">Seminar</th>
+</tr>
+
+<!-- Row 2: Subheaders -->
+<tr>
+<th rowspan="2">Day</th>
+<th colspan="2">Schedule</th>
+<th rowspan="2">Topic</th>
+</tr>
+<tr>
+<th>Begin</th>
+<th>End</th>
+</tr>
+
+<!-- Monday Rows -->
+<tr>
+<td rowspan="2" class="day-cell">Monday</td>
+<td rowspan="2" class="time-begin">8:00 a.m.</td>
+<td rowspan="2" class="time-end">5:00 p.m.</td>
+<td>Introduction to XML</td>
+</tr>
+<tr>
+<td>Validity: DTD and Relax NG</td>
+</tr>
+
+<!-- Tuesday Rows -->
+<tr>
+<td rowspan="3" class="day-cell">Tuesday</td>
+<td class="time-begin">8:00 a.m.</td>
+<td class="time-end">11:00 a.m.</td>
+<td rowspan="2">XPath</td>
+</tr>
+<tr>
+<td class="time-begin">11:00 a.m.</td>
+<td class="time-end">2:00 p.m.</td>
+</tr>
+<tr>
+<td class="time-begin">2:00 p.m.</td>
+<td class="time-end">5:00 p.m.</td>
+<td>XSL Transformations</td>
+</tr>
+
+<!-- Wednesday Row -->
+<tr>
+<td class="day-cell">Wednesday</td>
+<td class="time-begin">8:00 a.m.</td>
+<td class="time-end">12:00 p.m.</td>
+<td>XSL Formatting Objects</td>
+</tr>
+</table>
+
+</body>
+</html>
